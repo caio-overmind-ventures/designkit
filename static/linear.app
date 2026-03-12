@@ -1,0 +1,1 @@
+/home/seven/design-system-hub/styleguides/linear.app/out

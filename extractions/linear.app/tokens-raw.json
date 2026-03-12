@@ -1,0 +1,96 @@
+{
+  "source": "linear.app (app UI, dark mode, authenticated)",
+  "extractedAt": "2026-03-12T19:02:00Z",
+  "fonts": {
+    "primary": "Inter Variable",
+    "display": "Inter Variable",
+    "monospace": "Berkeley Mono",
+    "emoji": "Apple Color Emoji",
+    "fallback": "SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto"
+  },
+  "colors": {
+    "bg": {
+      "primary": "lch(4.52% 0.75 272)",
+      "secondary": "lch(9.02% 2.55 272 / 1)",
+      "tertiary": "lch(11.27% 3.45 272 / 1)",
+      "quaternary": "lch(6.77% 0.75 272 / 1)",
+      "base": "#0f0f11",
+      "baseDark": "#0f0f11",
+      "baseLight": "#fcfcfd",
+      "sidebarDark": "#090909",
+      "sidebarLight": "#f5f5f5",
+      "color": "lch(1.82% 0 272 / 1)"
+    },
+    "text": {
+      "primary": "lch(100% 0 272 / 1)",
+      "secondary": "lch(90.35% 1.375 272 / 1)",
+      "tertiary": "lch(61.399% 1.375 272 / 1)",
+      "quaternary": "lch(36.308% 1.375 272 / 1)"
+    },
+    "border": {
+      "primary": "lch(8.84% 2.91 272 / 1)",
+      "secondary": "lch(15.32% 2.91 272 / 1)",
+      "tertiary": "lch(15.32% 2.91 272 / 1)",
+      "color": "#1c1e21",
+      "colorDark": "#1c1e21",
+      "colorLight": "#e0e0e0"
+    },
+    "content": {
+      "color": "#6b6f76",
+      "colorDark": "#6b6f76",
+      "colorLight": "#b0b5c0",
+      "highlightColor": "#ffffff",
+      "highlightColorDark": "#ffffff",
+      "highlightColorLight": "#23252a"
+    },
+    "focus": {
+      "ringColor": "lch(47.918% 59.303 288.421)",
+      "ringWidth": "1px",
+      "ringOffset": "0px"
+    }
+  },
+  "typography": {
+    "sizes": {
+      "micro": "0.6875rem",
+      "microPlus": "0.6875rem",
+      "mini": "0.75rem",
+      "miniPlus": "0.75rem",
+      "small": "0.8125rem",
+      "smallPlus": "0.8125rem",
+      "regular": "0.9375rem",
+      "regularPlus": "0.9375rem",
+      "large": "1.125rem",
+      "largePlus": "1.125rem",
+      "title3": "1.25rem",
+      "title2": "1.5rem",
+      "title1": "2.25rem"
+    },
+    "weights": {
+      "light": 300,
+      "normal": 450,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "lineHeight": "1.6",
+    "letterSpacing": "-0.00666667em"
+  },
+  "radius": {
+    "control": "8px",
+    "block": "6px",
+    "rounded": "9999px",
+    "circle": "50%"
+  },
+  "layout": {
+    "sidebarWidth": "244px",
+    "labelDotSize": "9px",
+    "scrollbarWidth": "0px"
+  },
+  "animations": {
+    "quickTransition": "0.1s",
+    "regularTransition": "0.25s",
+    "slowTransition": "0.35s",
+    "highlightFadeIn": "0s",
+    "highlightFadeOut": "0.15s"
+  }
+}

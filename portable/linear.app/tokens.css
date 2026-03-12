@@ -1,0 +1,26 @@
+/* Design System Tokens — Auto-generated */
+/* Source: undefined */
+/* Generated: 2026-03-12T19:15:33.167Z */
+
+:root {
+  /* === Colors === */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+
+  /* Neutral scale */
+  --color-neutral-50: #f2f2f2;
+  --color-neutral-100: #e6e6e6;
+  --color-neutral-200: #cccccc;
+  --color-neutral-300: #a6a6a6;
+  --color-neutral-400: #737373;
+  --color-neutral-500: #000000;
+  --color-neutral-600: #000000;
+  --color-neutral-700: #000000;
+  --color-neutral-800: #000000;
+  --color-neutral-900: #000000;
+
+  /* === Typography === */
+  --font-sans: 'system-ui', system-ui, sans-serif;
+
+  /* === Border Radius === */
+}

@@ -1,0 +1,1 @@
+/home/seven/design-system-hub/styleguides/vercel.com/out
