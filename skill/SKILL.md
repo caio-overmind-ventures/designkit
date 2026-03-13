@@ -1,5 +1,5 @@
 ---
-name: extract-design-system-dembrandt
+name: designkit
 description: "Extract complete design systems from web applications and generate dedicated Next.js + shadcn styleguide projects with component development. Use when user wants to: analyze a website's design tokens, extract a design system, copy a site's visual style, reverse-engineer a brand's design language, add components to a styleguide, or create new UI components. Triggers on: 'extract design system from', 'analyze the design of', 'get the colors/fonts from', 'extract design tokens from', 'extract design', 'list styleguides', 'show the styleguide', 'add component', 'create a component', 'new component for', or when user shares a URL asking about its visual design."
 ---
 
@@ -11,7 +11,7 @@ Extract complete design tokens from a web **application** (not landing pages) vi
 
 **Extraction MUST happen inside the authenticated application UI.** Landing pages use marketing-specific styles that do NOT reflect the real product design system.
 
-- The **only** use for the landing page (dembrandt CLI) is to capture a screenshot for the hub card thumbnail.
+- The **only** use for the landing page (Playwright screenshot script) is to capture a screenshot for the hub card thumbnail.
 - All token extraction (colors, typography, spacing, radius, shadows, CSS variables) comes from the **app UI**.
 - If you cannot access the authenticated app, **return an error with the reason** — do NOT fall back to landing page extraction as a substitute.
 
@@ -29,8 +29,8 @@ Do NOT generate a styleguide from landing page tokens. That produces incorrect r
 
 ## Prerequisites
 
-- `dembrandt` installed globally (`npm install -g dembrandt`) — used ONLY for LP screenshot
-- dembrandt repo cloned at `/tmp/dembrandt-repo/`
+- `playwright` — used for LP screenshots via `scripts/screenshot.cjs`
+- screenshot script at `~/design-system-hub/scripts/screenshot.cjs`
 - Tailscale network: `100.109.88.111`
 - Browser access (Chrome relay or OpenClaw browser)
 
@@ -210,7 +210,7 @@ This creates `portable/<domain>/` with:
 #### Step 11: Capture LP screenshot (for hub card only)
 
 ```bash
-cd /tmp/dembrandt-repo
+cd ~/design-system-hub
 node index.js <domain> --save-output --no-sandbox
 ```
 

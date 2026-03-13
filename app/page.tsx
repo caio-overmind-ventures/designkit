@@ -118,7 +118,7 @@ export default function Home() {
           <div className="border border-dashed border-border p-16 text-center text-muted-foreground">
             <p className="text-sm mb-2">No extractions yet</p>
             <code className="text-xs bg-secondary px-3 py-1.5">
-              dembrandt site.com --save-output
+              designkit extract site.com
             </code>
           </div>
         ) : (
@@ -263,7 +263,7 @@ export default function Home() {
       <footer className="border-t border-border mt-12">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <span className="text-[9px] text-muted-foreground/50 tracking-widest uppercase">
-            Powered by dembrandt · Next.js · shadcn/ui
+            Powered by Overmind Ventures
           </span>
         </div>
       </footer>
