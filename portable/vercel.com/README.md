@@ -1,6 +1,6 @@
 # vercel.com — Design Tokens
 
-> Auto-extracted from https://vercel.com/caios-projects-692f98e5/~/observability
+> Auto-extracted from https://vercel.com/dashboard
 > Generated: 2026-03-12T21:24:17.051Z
 
 ## Files

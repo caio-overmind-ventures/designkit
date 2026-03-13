@@ -1,4 +1,4 @@
-/** Tailwind CSS Preset — https://vercel.com/caios-projects-692f98e5/~/observability */
+/** Tailwind CSS Preset — https://vercel.com/dashboard */
 module.exports = {
   "theme": {
     "extend": {
