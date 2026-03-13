@@ -4,9 +4,13 @@ Extract real design tokens from web applications and generate complete styleguid
 
 **Live demo:** [designkit.overmind.ventures](https://designkit.overmind.ventures)
 
+![DesignKit Hub](docs/hub-overview.jpg)
+
 ## What is this?
 
 DesignKit is an AI-powered tool that reverse-engineers design systems from live web applications. It extracts actual CSS tokens (colors, typography, spacing, shadows, radius) and generates complete Next.js + shadcn/ui styleguide projects with 10+ component showcases.
+
+![Linear Styleguide Example](docs/linear-styleguide.jpg)
 
 ## 🔑 App-First Extraction
 
