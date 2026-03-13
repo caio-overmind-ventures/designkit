@@ -1,0 +1,115 @@
+{
+  "source": "linear.app (authenticated app, dembrandt extractors via OpenClaw browser)",
+  "extractedAt": "2026-03-13T13:58:00Z",
+  "extractor": "dembrandt-browser-bundle",
+  "pages": ["team/DES/active", "settings/account/preferences"],
+  "fonts": {
+    "primary": "Inter Variable",
+    "fallbacks": "SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, Linear Thai",
+    "fontDisplay": null,
+    "googleFonts": [],
+    "isVariableFont": true
+  },
+  "typography": [
+    { "context": "body/link/button", "size": "16px (1.00rem)", "weight": 400, "lineHeight": "1.50" },
+    { "context": "body (semibold)", "size": "14px (0.88rem)", "weight": 550, "lineHeight": "1.64", "letterSpacing": "-0.1px" },
+    { "context": "button (default)", "size": "13.33px (0.83rem)", "weight": 400 },
+    { "context": "body/heading-2", "size": "13px (0.81rem)", "weight": 500 },
+    { "context": "body (medium)", "size": "13px (0.81rem)", "weight": 450 },
+    { "context": "body (tight)", "size": "13px (0.81rem)", "weight": 450, "letterSpacing": "-0.26px" },
+    { "context": "button/caption/link", "size": "12px (0.75rem)", "weight": 500 },
+    { "context": "caption", "size": "12px (0.75rem)", "weight": 450 }
+  ],
+  "cssVariables": {
+    "--color-text-primary": "lch(100% 0 272 / 1)",
+    "--color-text-secondary": "lch(90.35% 1.375 272 / 1)",
+    "--color-text-tertiary": "lch(61.399% 1.375 272 / 1)",
+    "--color-text-quaternary": "lch(36.308% 1.375 272 / 1)",
+    "--color-bg-primary": "lch(4.52% 0.75 272)",
+    "--color-bg-secondary": "lch(9.02% 2.55 272 / 1)",
+    "--color-bg-tertiary": "lch(11.27% 3.45 272 / 1)",
+    "--color-bg-quaternary": "lch(6.77% 0.75 272 / 1)",
+    "--color-bg-quinary": "0",
+    "--color-border-primary": "lch(8.84% 2.91 272 / 1)",
+    "--color-border-secondary": "lch(15.32% 2.91 272 / 1)",
+    "--color-border-tertiary": "lch(15.32% 2.91 272 / 1)",
+    "--bg-color": "lch(1.82% 0 272 / 1)",
+    "--bg-base-color": "lch(4.52% 0.75 272)",
+    "--bg-base-color-dark": "#0f0f11",
+    "--bg-base-color-light": "#fcfcfd",
+    "--bg-sidebar-color": "lch(1.82% 0 272 / 1)",
+    "--bg-sidebar-light": "#f5f5f5",
+    "--bg-sidebar-dark": "#090909",
+    "--bg-border-color": "lch(15.32% 2.91 272 / 1)",
+    "--bg-border-color-light": "#e0e0e0",
+    "--bg-border-color-dark": "#1c1e21",
+    "--content-color": "#6b6f76",
+    "--content-color-light": "#b0b5c0",
+    "--content-color-dark": "#6b6f76",
+    "--content-highlight-color": "#ffffff",
+    "--content-highlight-color-light": "#23252a",
+    "--content-highlight-color-dark": "#ffffff",
+    "--focus-ring-color": "lch(47.918% 59.303 288.421)",
+    "--focus-ring-outline": "1px solid lch(47.918% 59.303 288.421)",
+    "--focus-ring-width": "1px",
+    "--focus-ring-offset": "0px",
+    "--control-border-radius": "8px"
+  },
+  "palette": [
+    { "color": "rgb(255, 255, 255)", "normalized": "#ffffff", "count": 826, "confidence": "high", "role": "text-primary (on dark)" },
+    { "color": "lch(100 0 272)", "normalized": "lch-white", "count": 380, "confidence": "high", "role": "background-components" },
+    { "color": "lch(60.307 1 272)", "count": 47, "confidence": "high", "role": "text-tertiary" },
+    { "color": "lch(90.077 1 272)", "count": 33, "confidence": "high", "role": "text-secondary" },
+    { "color": "lch(90.35 1.375 272)", "count": 27, "confidence": "high", "role": "text-secondary-var" },
+    { "color": "lch(61.399 1.375 272)", "count": 21, "confidence": "high", "role": "text-tertiary-var" }
+  ],
+  "spacing": {
+    "scaleType": "8px",
+    "values": [
+      { "px": "1px", "rem": "0.06rem", "count": 31 },
+      { "px": "2px", "rem": "0.13rem", "count": 12 },
+      { "px": "4px", "rem": "0.25rem", "count": 8 },
+      { "px": "6px", "rem": "0.38rem", "count": 4 },
+      { "px": "8px", "rem": "0.50rem", "count": 12 },
+      { "px": "10px", "rem": "0.63rem", "count": 2 }
+    ]
+  },
+  "borderRadius": [
+    { "value": "8px", "count": 44, "elements": ["div", "a", "span", "button", "input"], "note": "primary radius" },
+    { "value": "9999px", "count": 12, "elements": ["button", "a"], "note": "pill/round" },
+    { "value": "10px", "count": 7, "elements": ["button", "div"] },
+    { "value": "3px", "count": 4, "elements": ["div"] },
+    { "value": "12px", "count": 3, "elements": ["div", "main"] },
+    { "value": "5px", "count": 3, "elements": ["div"] }
+  ],
+  "shadows": [
+    { "shadow": "lch(0 0 0 / 0.04) 0px 4px 4px -1px, lch(0 0 0 / 0.08) 0px 1px 1px 0px", "count": 7, "note": "elevation-default" },
+    { "shadow": "lch(12.62 2.16 272) 0px 0px 0px 1px, lch(0 0 0 / 0.04) 0px 4px 4px -1px, lch(0 0 0 / 0.08) 0px 1px 1px 0px", "count": 1, "note": "card-elevated" }
+  ],
+  "borders": [
+    { "width": "1px", "style": "solid", "color": "lch(15.32 2.91 272)", "count": 15, "note": "primary border" },
+    { "width": "1px", "style": "solid", "color": "lch(12.62 2.16 272)", "count": 1, "note": "subtle border" },
+    { "width": "1px", "style": "solid", "color": "lch(8.84 2.91 272)", "count": 1, "note": "dark border" }
+  ],
+  "components": {
+    "buttons": [
+      { "bg": "lch(13.841 2.743 272)", "color": "lch(90.668 1.6 272)", "padding": "1px 28px 1px 10px", "borderRadius": "8px", "border": "1px solid lch(18.47 3.36 272)", "fontSize": "13px", "note": "select/dropdown button" }
+    ],
+    "inputs": [
+      { "bg": "lch(47.918 59.303 288.421)", "color": "#fff", "borderRadius": "72px", "fontSize": "13.33px", "note": "toggle/switch (accent color)" },
+      { "bg": "lch(47.275 1.046 272.002)", "color": "#fff", "borderRadius": "72px", "fontSize": "13.33px", "note": "toggle/switch (inactive)" }
+    ]
+  },
+  "colorSpace": "lch",
+  "theme": "dark",
+  "designNotes": [
+    "Linear uses LCH color space natively (not rgb/hex)",
+    "All colors use hue 272 (blue-gray) except focus ring (288.421 = purple-blue)",
+    "Font uses Inter Variable with custom weights (450, 550)",
+    "8px spacing grid",
+    "8px primary border radius",
+    "Dark-first design: bg ranges from lch(1.82%) to lch(15.32%)",
+    "Very tight typography scale: 12-16px range",
+    "Light/dark mode vars available via --*-light and --*-dark suffixes"
+  ]
+}

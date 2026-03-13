@@ -1,0 +1,197 @@
+{
+  "extractedAt": "2026-03-13T14:30:00Z",
+  "pages": [
+    "issue-detail (DES-1)",
+    "all-issues (team/DES/all)",
+    "create-issue-modal (C shortcut)",
+    "command-palette (Ctrl+K)",
+    "settings/preferences",
+    "settings/labels",
+    "settings/workspace",
+    "inbox"
+  ],
+  "components": {
+    "inputs": {
+      "standard": {
+        "height": "32px",
+        "borderRadius": "8px",
+        "bg": "lch(7.67 1.2 272)",
+        "border": "1px solid lch(18.47 3.36 272)",
+        "color": "lch(100 0 272)",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "padding": "6px 12px"
+      },
+      "title": {
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "bg": "transparent",
+        "border": "none",
+        "padding": "0",
+        "note": "issue title input, borderless"
+      },
+      "search": {
+        "height": "32px",
+        "borderRadius": "8px",
+        "bg": "lch(4.52 0.75 272)",
+        "border": "1px solid lch(15.32 2.91 272)",
+        "fontSize": "13px",
+        "padding": "6px 25px 6px 32px",
+        "placeholder": "Filter by name..."
+      },
+      "commandPaletteSearch": {
+        "height": "50px",
+        "bg": "transparent",
+        "border": "none",
+        "fontSize": "13px",
+        "padding": "11px 12px",
+        "placeholder": "Type a command or search..."
+      }
+    },
+    "buttons": {
+      "primary": {
+        "bg": "lch(47.918 59.303 288.421)",
+        "color": "#fff",
+        "borderRadius": "8px",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "height": "30px",
+        "note": "Create issue CTA"
+      },
+      "secondary": {
+        "bg": "lch(13.841 2.743 272)",
+        "color": "lch(90.668 1.6 272)",
+        "borderRadius": "8px",
+        "border": "1px solid lch(18.47 3.36 272)",
+        "fontSize": "13px",
+        "height": "30px",
+        "note": "selects, dropdowns"
+      },
+      "ghost": {
+        "bg": "transparent",
+        "color": "lch(90.35 1.375 272)",
+        "borderRadius": "8px",
+        "fontSize": "13px",
+        "height": "28px"
+      },
+      "pill": {
+        "bg": "lch(15.191 2.743 272)",
+        "color": "lch(63.218 1.6 272)",
+        "borderRadius": "9999px",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "height": "24px",
+        "padding": "0px 8px 0px 6px",
+        "note": "property pills in create modal (Backlog, Priority, etc)"
+      },
+      "icon": {
+        "bg": "lch(10.691 2.293 272)",
+        "color": "lch(90.35 1.375 272)",
+        "borderRadius": "9999px",
+        "fontSize": "12px",
+        "height": "28px",
+        "note": "sidebar icon buttons"
+      },
+      "destructive": {
+        "color": "lch(80 80 29)",
+        "bg": "transparent",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "note": "Delete workspace, text-only"
+      }
+    },
+    "selects": {
+      "standard": {
+        "bg": "lch(13.841 2.743 272)",
+        "color": "lch(90.668 1.6 272)",
+        "border": "1px solid lch(18.47 3.36 272)",
+        "borderRadius": "8px",
+        "fontSize": "13px",
+        "height": "30px",
+        "padding": "1px 28px 1px 10px"
+      }
+    },
+    "cards": {
+      "settings": {
+        "bg": "lch(7.67 1.2 272)",
+        "border": "1px solid lch(14.15 3.36 272)",
+        "borderRadius": "11px",
+        "width": "640px"
+      }
+    },
+    "dialog": {
+      "createIssue": {
+        "width": "~480px (centered modal)",
+        "bg": "card background",
+        "borderRadius": "12px",
+        "shadow": "lch-based elevation",
+        "sections": ["title input", "description textarea", "property pills row", "create button + toggle"]
+      }
+    },
+    "commandPalette": {
+      "itemHeight": "46px",
+      "itemFontSize": "15px",
+      "itemColor": "lch(90.805 1.6 272)",
+      "itemColorSelected": "lch(100 0 272)",
+      "itemPadding": "0px 12px",
+      "sectionHeading": {
+        "fontSize": "12px",
+        "color": "lch(61.399 1.375 272)",
+        "textTransform": "uppercase"
+      },
+      "shortcutKbd": {
+        "fontSize": "11px",
+        "color": "lch(63.218 1.6 272)",
+        "border": "1px solid lch(13.34 3.36 272)",
+        "borderRadius": "6px",
+        "padding": "4px"
+      }
+    },
+    "navigation": {
+      "sidebarItem": {
+        "fontSize": "13px",
+        "padding": "4px 8px",
+        "borderRadius": "6px",
+        "active": { "bg": "accent", "fontWeight": "500" },
+        "inactive": { "color": "muted-foreground" }
+      },
+      "sectionHeading": {
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "color": "lch(100 0 272)",
+        "note": "settings sidebar section titles"
+      },
+      "sidebarCategory": {
+        "fontSize": "11px",
+        "fontWeight": "600",
+        "textTransform": "uppercase",
+        "letterSpacing": "wider",
+        "color": "muted-foreground"
+      },
+      "tabs": {
+        "fontSize": "13px",
+        "active": { "borderBottom": "2px solid primary", "fontWeight": "500" },
+        "inactive": { "color": "muted-foreground" }
+      }
+    },
+    "links": {
+      "primary": {
+        "color": "lch(56.574 70 288.421)",
+        "textDecoration": "none",
+        "note": "purple accent links in issue body"
+      }
+    },
+    "emptyState": {
+      "icon": "line-drawn illustration",
+      "text": { "fontSize": "13px", "color": "muted-foreground" },
+      "note": "Inbox 'No notifications'"
+    },
+    "labels": {
+      "formLabel": {
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "color": "lch(100 0 272)"
+      }
+    }
+  }
+}
