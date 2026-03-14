@@ -1,0 +1,137 @@
+// DesignKit Template: Form
+// Customize: section titles, placeholder text, field names to match target app
+// Keep structure identical — only change content strings
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Switch } from "@/components/ui/switch";
+import { Textarea } from "@/components/ui/textarea";
+
+export default function FormPage() {
+  return (
+    <div className="space-y-10">
+      <div>
+        <h1 className="text-2xl font-semibold tracking-tight">Form</h1>
+        <p className="text-muted-foreground mt-1">Input, select, textarea, toggle, validation states</p>
+      </div>
+
+      {/* Section 1: Simple text input */}
+      <Card>
+        <CardHeader>
+          <CardTitle>{{SECTION_1_TITLE}}</CardTitle>
+          <CardDescription>{{SECTION_1_DESC}}</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <Input defaultValue="{{SECTION_1_VALUE}}" className="max-w-sm" />
+          <p className="text-[13px] text-muted-foreground">{{SECTION_1_HINT}}</p>
+          <div className="flex justify-end"><Button size="sm">Save</Button></div>
+        </CardContent>
+      </Card>
+
+      {/* Section 2: Input with prefix */}
+      <Card>
+        <CardHeader>
+          <CardTitle>{{SECTION_2_TITLE}}</CardTitle>
+          <CardDescription>{{SECTION_2_DESC}}</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="flex items-center gap-0 max-w-md">
+            <span className="text-sm text-muted-foreground bg-muted px-3 py-2 rounded-l-md border border-r-0 border-border h-10 flex items-center">{{PREFIX}}</span>
+            <Input defaultValue="{{SECTION_2_VALUE}}" className="rounded-l-none" />
+          </div>
+          <div className="flex justify-end"><Button size="sm">Save</Button></div>
+        </CardContent>
+      </Card>
+
+      {/* Section 3: Multi-field (email + role) */}
+      <Card>
+        <CardHeader>
+          <CardTitle>{{SECTION_3_TITLE}}</CardTitle>
+          <CardDescription>{{SECTION_3_DESC}}</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid grid-cols-2 gap-4 max-w-2xl">
+            <div className="space-y-2">
+              <Label>{{FIELD_1_LABEL}}</Label>
+              <Input placeholder="{{FIELD_1_PLACEHOLDER}}" />
+            </div>
+            <div className="space-y-2">
+              <Label>{{FIELD_2_LABEL}}</Label>
+              <Select>
+                <SelectTrigger><SelectValue placeholder="{{FIELD_2_PLACEHOLDER}}" /></SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="opt1">{{OPT_1}}</SelectItem>
+                  <SelectItem value="opt2">{{OPT_2}}</SelectItem>
+                  <SelectItem value="opt3">{{OPT_3}}</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Section 4: Toggle + selects */}
+      <Card>
+        <CardHeader>
+          <CardTitle>{{SECTION_4_TITLE}}</CardTitle>
+          <CardDescription>{{SECTION_4_DESC}}</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <div className="grid grid-cols-2 gap-4 max-w-2xl">
+            <div className="space-y-2">
+              <Label>{{SELECT_1_LABEL}}</Label>
+              <Select><SelectTrigger><SelectValue placeholder="{{SELECT_1_DEFAULT}}" /></SelectTrigger><SelectContent><SelectItem value="on">On</SelectItem><SelectItem value="off">Off</SelectItem></SelectContent></Select>
+            </div>
+            <div className="space-y-2">
+              <Label>{{SELECT_2_LABEL}}</Label>
+              <Select><SelectTrigger><SelectValue placeholder="{{SELECT_2_DEFAULT}}" /></SelectTrigger><SelectContent><SelectItem value="on">On</SelectItem><SelectItem value="off">Off</SelectItem></SelectContent></Select>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <Switch id="toggle" defaultChecked />
+            <Label htmlFor="toggle">{{TOGGLE_LABEL}}</Label>
+          </div>
+          <div className="flex justify-end"><Button size="sm">Save</Button></div>
+        </CardContent>
+      </Card>
+
+      {/* Section 5: Key/Value (env vars style) */}
+      <Card>
+        <CardHeader>
+          <CardTitle>{{SECTION_5_TITLE}}</CardTitle>
+          <CardDescription>{{SECTION_5_DESC}}</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="space-y-2 max-w-2xl">
+            <Label>Key</Label>
+            <Input placeholder="{{KEY_PLACEHOLDER}}" className="font-mono text-sm" />
+          </div>
+          <div className="space-y-2 max-w-2xl">
+            <Label>Value</Label>
+            <Textarea placeholder="Enter value..." className="font-mono text-sm" rows={3} />
+          </div>
+          <div className="flex justify-end"><Button size="sm">Save</Button></div>
+        </CardContent>
+      </Card>
+
+      {/* Validation States */}
+      <Card>
+        <CardHeader><CardTitle>Validation States</CardTitle></CardHeader>
+        <CardContent className="space-y-4 max-w-sm">
+          <div className="space-y-2"><Label>Default</Label><Input placeholder="Enter text..." /></div>
+          <div className="space-y-2"><Label>With value</Label><Input defaultValue="{{VALID_VALUE}}" /></div>
+          <div className="space-y-2">
+            <Label className="text-destructive">Error</Label>
+            <Input className="border-destructive" defaultValue="{{ERROR_VALUE}}" />
+            <p className="text-xs text-destructive">{{ERROR_MSG}}</p>
+          </div>
+          <div className="space-y-2"><Label>Disabled</Label><Input disabled defaultValue="Read only" /></div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
