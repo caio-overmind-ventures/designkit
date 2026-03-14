@@ -4,6 +4,9 @@ import { rm, access } from "fs/promises";
 import { join } from "path";
 
 export async function POST(req: NextRequest) {
+  // DEMO_LOCK: disable delete for public demo — remove this block to re-enable
+  return NextResponse.json({ ok: false, error: "Delete disabled (demo mode)" }, { status: 403 });
+
   const { domain } = await req.json();
   if (!domain || typeof domain !== "string") {
     return NextResponse.json({ ok: false, error: "Missing domain" }, { status: 400 });

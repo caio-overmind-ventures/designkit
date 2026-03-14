@@ -131,11 +131,7 @@ export default function Home() {
               return (
                 <div
                   key={sg.domain}
-                  className={`border bg-card overflow-hidden group transition-all ${
-                    sg.built
-                      ? "border-green-500/60 ring-1 ring-green-500/20"
-                      : "border-border hover:border-foreground/20"
-                  }`}
+                  className="border border-border bg-card overflow-hidden group transition-all hover:border-foreground/20"
                 >
                   {/* Screenshot — first fold */}
                   <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
