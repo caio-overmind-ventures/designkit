@@ -242,14 +242,7 @@ export default function Home() {
                       >
                         ↓
                       </button>
-                      <button
-                        onClick={() => handleDelete(sg.domain)}
-                        disabled={isLoading}
-                        title="Delete"
-                        className="px-3 py-2 text-[10px] tracking-widest uppercase text-red-400 border border-border hover:border-red-500 hover:text-red-500 hover:bg-red-500/5 transition-colors disabled:opacity-30"
-                      >
-                        ✕
-                      </button>
+                      {/* Delete disabled for public demo */}
                     </div>
                   </div>
                 </div>
