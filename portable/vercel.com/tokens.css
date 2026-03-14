@@ -1,26 +1,120 @@
-/* Design System Tokens — Auto-generated */
-/* Source: https://vercel.com/dashboard */
-/* Generated: 2026-03-12T21:24:17.051Z */
+/* Vercel Design System — Extracted 2026-03-14 */
+/* Font: Geist (sans) + Geist Mono (mono) */
 
 :root {
-  /* === Colors === */
-  --color-background: #ffffff;
-  --color-foreground: #000000;
+  /* Backgrounds */
+  --background-100: 0 0% 100%;       /* #ffffff */
+  --background-200: 0 0% 98%;        /* #fafafa */
+  
+  /* Foreground */
+  --foreground: 0 0% 0%;             /* #000 */
+  --foreground-muted: 0 0% 30%;      /* #4d4d4d */
+  
+  /* Gray Scale */
+  --gray-100: 0 0% 95%;              /* #f2f2f2 */
+  --gray-200: 0 0% 92%;              /* #ebebeb */
+  --gray-300: 0 0% 90%;              /* #e6e6e6 */
+  --gray-400: 0 0% 92%;
+  --gray-500: 0 0% 79%;              /* #c9c9c9 */
+  --gray-600: 0 0% 66%;              /* #a8a8a8 */
+  --gray-700: 0 0% 56%;              /* #8f8f8f */
+  --gray-800: 0 0% 49%;              /* #7d7d7d */
+  --gray-900: 0 0% 30%;              /* #4d4d4d */
+  --gray-1000: 0 0% 9%;              /* #171717 */
+  
+  /* Gray Alpha */
+  --gray-alpha-100: 0 0% 0% / 0.05;
+  --gray-alpha-200: 0 0% 0% / 0.08;
+  --gray-alpha-300: 0 0% 0% / 0.10;
+  --gray-alpha-400: 0 0% 0% / 0.08;
+  --gray-alpha-500: 0 0% 0% / 0.21;
+  --gray-alpha-600: 0 0% 0% / 0.34;
+  --gray-alpha-700: 0 0% 0% / 0.44;
+  --gray-alpha-800: 0 0% 0% / 0.51;
+  --gray-alpha-900: 0 0% 0% / 0.70;
+  --gray-alpha-1000: 0 0% 0% / 0.91;
+  
+  /* Accent Colors */
+  --blue-700: 212 100% 48%;          /* #0070f3 */
+  --red-900: 358 66% 48%;
+  --green-900: 133 50% 32%;
+  --amber-900: 30 100% 32%;
+  
+  /* Semantic */
+  --focus-color: 212 100% 48%;
+  --link-color: 212 100% 48%;
+  --error: 0 100% 44%;               /* #e00 */
+  --warning: 36 91% 55%;             /* #f5a623 */
+  --success: 212 100% 48%;           /* #0070f3 */
+  
+  /* Surfaces */
+  --selection: 0 0% 9%;
+  --selection-text: 0 0% 95%;
+  --overlay-backdrop: 0 0% 98%;
+  --overlay-opacity: 0.8;
+  
+  /* Shadows */
+  --shadow-border: 0 0 0 1px rgba(0,0,0,0.08);
+  --shadow-menu: 0 0 0 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(0,0,0,0.02), 0px 4px 8px -4px rgba(0,0,0,0.04), 0px 16px 24px -8px rgba(0,0,0,0.06);
+  --shadow-modal: 0 0 0 1px rgba(0,0,0,0.08), 0px 1px 1px rgba(0,0,0,0.02), 0px 8px 16px -4px rgba(0,0,0,0.04), 0px 24px 32px -8px rgba(0,0,0,0.06);
+  
+  /* Layout */
+  --radius: 6px;
+  --page-width: 1400px;
+  --sidebar-width: 256px;
+  --header-height: 64px;
+}
 
-  /* Neutral scale */
-  --color-neutral-50: #f2f2f2;
-  --color-neutral-100: #e6e6e6;
-  --color-neutral-200: #cccccc;
-  --color-neutral-300: #a6a6a6;
-  --color-neutral-400: #737373;
-  --color-neutral-500: #000000;
-  --color-neutral-600: #000000;
-  --color-neutral-700: #000000;
-  --color-neutral-800: #000000;
-  --color-neutral-900: #000000;
-
-  /* === Typography === */
-  --font-sans: 'system-ui', system-ui, sans-serif;
-
-  /* === Border Radius === */
+.dark {
+  /* Backgrounds */
+  --background-100: 0 0% 4%;         /* #0a0a0a */
+  --background-200: 0 0% 0%;         /* #000 */
+  
+  /* Foreground */
+  --foreground: 0 0% 100%;           /* #fff */
+  --foreground-muted: 0 0% 63%;
+  
+  /* Gray Scale */
+  --gray-100: 0 0% 10%;
+  --gray-200: 0 0% 12%;
+  --gray-300: 0 0% 16%;
+  --gray-400: 0 0% 18%;
+  --gray-500: 0 0% 27%;
+  --gray-600: 0 0% 53%;
+  --gray-700: 0 0% 56%;
+  --gray-800: 0 0% 49%;
+  --gray-900: 0 0% 63%;
+  --gray-1000: 0 0% 93%;
+  
+  /* Gray Alpha */
+  --gray-alpha-100: 0 0% 100% / 0.06;
+  --gray-alpha-200: 0 0% 100% / 0.09;
+  --gray-alpha-300: 0 0% 100% / 0.13;
+  --gray-alpha-400: 0 0% 100% / 0.14;
+  --gray-alpha-500: 0 0% 100% / 0.24;
+  --gray-alpha-600: 0 0% 100% / 0.51;
+  --gray-alpha-700: 0 0% 100% / 0.54;
+  --gray-alpha-800: 0 0% 100% / 0.47;
+  --gray-alpha-900: 0 0% 100% / 0.61;
+  --gray-alpha-1000: 0 0% 100% / 0.92;
+  
+  /* Accent Colors */
+  --blue-700: 212 100% 48%;
+  --red-900: 358 100% 69%;
+  --green-900: 131 43% 57%;
+  --amber-900: 39 90% 50%;
+  
+  /* Semantic */
+  --focus-color: 210 100% 66%;
+  --link-color: 210 100% 66%;
+  
+  /* Surfaces */
+  --selection: 0 0% 93%;
+  --selection-text: 0 0% 10%;
+  --overlay-backdrop: 0 0% 0%;
+  
+  /* Shadows */
+  --shadow-border: 0 0 0 1px rgba(255,255,255,0.14), 0 0 0 1px rgba(0,0,0,1);
+  --shadow-menu: 0 0 0 1px rgba(255,255,255,0.14), 0px 1px 1px rgba(0,0,0,0.02), 0px 4px 8px -4px rgba(0,0,0,0.04), 0px 16px 24px -8px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,1);
+  --shadow-modal: 0 0 0 1px rgba(255,255,255,0.14), 0px 1px 1px rgba(0,0,0,0.02), 0px 8px 16px -4px rgba(0,0,0,0.04), 0px 24px 32px -8px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,1);
 }

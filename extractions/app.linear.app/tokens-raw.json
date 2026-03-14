@@ -1,0 +1,80 @@
+{
+  "dark": {
+    "cssVars": [
+      {"name": "--color-bg-primary", "value": "lch(4.52% 0.75 272)"},
+      {"name": "--color-bg-secondary", "value": "lch(9.02% 2.55 272 / 1)"},
+      {"name": "--color-bg-tertiary", "value": "lch(11.27% 3.45 272 / 1)"},
+      {"name": "--color-bg-quaternary", "value": "lch(6.77% 0.75 272 / 1)"},
+      {"name": "--color-text-primary", "value": "lch(100% 0 272 / 1)"},
+      {"name": "--color-text-secondary", "value": "lch(90.35% 1.375 272 / 1)"},
+      {"name": "--color-text-tertiary", "value": "lch(61.399% 1.375 272 / 1)"},
+      {"name": "--color-text-quaternary", "value": "lch(36.308% 1.375 272 / 1)"},
+      {"name": "--color-border-primary", "value": "lch(8.84% 2.91 272 / 1)"},
+      {"name": "--color-border-secondary", "value": "lch(15.32% 2.91 272 / 1)"},
+      {"name": "--color-border-tertiary", "value": "lch(15.32% 2.91 272 / 1)"},
+      {"name": "--bg-color", "value": "lch(1.82% 0 272 / 1)"},
+      {"name": "--bg-base-color", "value": "lch(4.52% 0.75 272)"},
+      {"name": "--bg-sidebar-color", "value": "lch(1.82% 0 272 / 1)"},
+      {"name": "--bg-border-color", "value": "lch(15.32% 2.91 272 / 1)"},
+      {"name": "--focus-ring-color", "value": "lch(47.918% 59.303 288.421)"},
+      {"name": "--font-regular", "value": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", \"Linear Thai\", sans-serif"},
+      {"name": "--font-display", "value": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", \"Linear Thai\", sans-serif"},
+      {"name": "--font-monospace", "value": "\"Berkeley Mono\", \"SFMono Regular\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace"},
+      {"name": "--font-size-micro", "value": ".6875rem"},
+      {"name": "--font-size-mini", "value": ".75rem"},
+      {"name": "--font-size-small", "value": ".8125rem"},
+      {"name": "--font-size-regular", "value": ".9375rem"},
+      {"name": "--font-size-large", "value": "1.125rem"},
+      {"name": "--font-size-title3", "value": "1.25rem"},
+      {"name": "--font-size-title2", "value": "1.5rem"},
+      {"name": "--font-size-title1", "value": "2.25rem"},
+      {"name": "--font-weight-light", "value": "300"},
+      {"name": "--font-weight-normal", "value": "450"},
+      {"name": "--font-weight-medium", "value": "500"},
+      {"name": "--font-weight-semibold", "value": "600"},
+      {"name": "--font-weight-bold", "value": "700"},
+      {"name": "--radius-rounded", "value": "9999px"},
+      {"name": "--radius-circle", "value": "50%"},
+      {"name": "--control-border-radius", "value": "8px"},
+      {"name": "--sidebar-width", "value": "244px"},
+      {"name": "--scrollbar-width", "value": "10px"},
+      {"name": "--speed-quickTransition", "value": ".1s"},
+      {"name": "--speed-regularTransition", "value": ".25s"},
+      {"name": "--speed-slowTransition", "value": ".35s"}
+    ],
+    "body": {
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(255, 255, 255)"
+    }
+  },
+  "light": {
+    "cssVars": [
+      {"name": "--color-bg-primary", "value": "lch(98.94% 0.5 282)"},
+      {"name": "--color-bg-secondary", "value": "lch(94.44% 0.5 282 / 1)"},
+      {"name": "--color-bg-tertiary", "value": "lch(100% 0.5 282 / 1)"},
+      {"name": "--color-bg-quaternary", "value": "lch(97.94% 0.5 282 / 1)"},
+      {"name": "--color-text-primary", "value": "lch(9.894% 0 282 / 1)"},
+      {"name": "--color-text-secondary", "value": "lch(19.788% 1.25 282 / 1)"},
+      {"name": "--color-text-tertiary", "value": "lch(39.576% 1.25 282 / 1)"},
+      {"name": "--color-text-quaternary", "value": "lch(65.3% 1.25 282 / 1)"},
+      {"name": "--color-border-primary", "value": "lch(94.89% 0 282 / 1)"},
+      {"name": "--color-border-secondary", "value": "lch(89.49% 0 282 / 1)"},
+      {"name": "--color-border-tertiary", "value": "lch(85.44% 0 282 / 1)"},
+      {"name": "--bg-color", "value": "lch(95.94% 0.5 282 / 1)"},
+      {"name": "--bg-base-color", "value": "lch(98.94% 0.5 282)"},
+      {"name": "--bg-sidebar-color", "value": "lch(95.94% 0.5 282 / 1)"},
+      {"name": "--bg-border-color", "value": "lch(89.49% 0 282 / 1)"},
+      {"name": "--focus-ring-color", "value": "lch(53% 52.26 286.91)"}
+    ],
+    "body": {
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 0)"
+    }
+  }
+}

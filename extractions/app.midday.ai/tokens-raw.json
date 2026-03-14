@@ -1,0 +1,62 @@
+{
+  "extractedAt": "2026-03-13T22:00:00Z",
+  "source": "app.midday.ai",
+  "fonts": {
+    "body": "\"Hedvig Letters Sans\", \"Hedvig Letters Sans Fallback\"",
+    "display": "\"Hedvig Letters Serif\", \"Hedvig Letters Serif Fallback\"",
+    "size": "16px",
+    "lineHeight": "24px"
+  },
+  "light": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(18, 18, 18)",
+    "cssVars": {
+      "--background": "0,0%,100%",
+      "--foreground": "0,0%,7%",
+      "--card": "45 18% 96%",
+      "--card-foreground": "240 10% 3.9%",
+      "--popover": "45 18% 96%",
+      "--popover-foreground": "240 10% 3.9%",
+      "--primary": "240 5.9% 10%",
+      "--primary-foreground": "0 0% 98%",
+      "--secondary": "40,11%,89%",
+      "--secondary-foreground": "240 5.9% 10%",
+      "--muted": "40,11%,89%",
+      "--muted-foreground": "0,0%,38%",
+      "--accent": "40,10%,94%",
+      "--accent-foreground": "240 5.9% 10%",
+      "--destructive": "0 84.2% 60.2%",
+      "--destructive-foreground": "0 0% 98%",
+      "--border": "45,5%,85%",
+      "--input": "240 5.9% 90%",
+      "--ring": "240 5.9% 10%",
+      "--radius": ".5rem"
+    }
+  },
+  "dark": {
+    "bg": "rgb(13, 13, 13)",
+    "color": "rgb(250, 250, 250)",
+    "cssVars": {
+      "--background": "0,0%,5%",
+      "--foreground": "0 0% 98%",
+      "--card": "0,0%,7%",
+      "--card-foreground": "0 0% 98%",
+      "--popover": "0,0%,7%",
+      "--popover-foreground": "0 0% 98%",
+      "--primary": "0 0% 98%",
+      "--primary-foreground": "240 5.9% 10%",
+      "--secondary": "0,0%,7%",
+      "--secondary-foreground": "0 0% 98%",
+      "--muted": "0,0%,11%",
+      "--muted-foreground": "0,0%,38%",
+      "--accent": "0,0%,11%",
+      "--accent-foreground": "0 0% 98%",
+      "--destructive": "359,100%,61%",
+      "--destructive-foreground": "0,0%,100%",
+      "--border": "0,0%,11%",
+      "--input": "0,0%,11%",
+      "--ring": "240 4.9% 83.9%",
+      "--radius": ".5rem"
+    }
+  }
+}

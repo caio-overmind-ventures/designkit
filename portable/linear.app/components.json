@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "source": "app.linear.app",
+    "extractedAt": "2026-03-14",
+    "modes": ["light", "dark"]
+  },
+  "character": {
+    "density": "compact",
+    "corners": "rounded",
+    "elevation": "flat",
+    "borders": "thin",
+    "palette": "monochromatic",
+    "feel": "Dense, professional project management tool with a dark-first aesthetic. Minimal shadows, pill-shaped buttons, tight 32px control heights, and a muted neutral palette punctuated by a single purple accent. The UI is information-dense but never cluttered.",
+    "iconography": {
+      "style": "monochromatic, stroke-only",
+      "weight": "1.5px stroke",
+      "size": "16px default, 14px compact sidebar",
+      "color": "currentColor",
+      "library": "Custom SVG icons (Linear-specific), closest to Lucide",
+      "never": "No emojis in UI chrome, no filled icons, no multi-color icons. Color dots for labels/priorities only."
+    }
+  },
+  "components": {
+    "button": {
+      "borderRadius": "9999px",
+      "padding": "0px 12px",
+      "fontWeight": "500",
+      "fontSize": "13px",
+      "letterSpacing": "normal",
+      "height": "32px",
+      "borderWidth": "0",
+      "shadow": "none",
+      "note": "Pill-shaped. Primary = purple accent fill. Very compact."
+    },
+    "button-secondary": {
+      "borderRadius": "9999px",
+      "padding": "0px 12px",
+      "fontWeight": "500",
+      "fontSize": "13px",
+      "borderWidth": "1px",
+      "height": "32px",
+      "shadow": "0px 4px 4px -1px rgba(0,0,0,0.04), 0px 1px 1px rgba(0,0,0,0.08)",
+      "note": "Pill-shaped outline button with subtle shadow."
+    },
+    "input": {
+      "borderRadius": "8px",
+      "padding": "6px 12px",
+      "fontSize": "13px",
+      "fontWeight": "500",
+      "borderWidth": "1px",
+      "height": "32px",
+      "note": "Compact 32px height. Search inputs have icon padding-left 32px."
+    },
+    "select": {
+      "borderRadius": "8px",
+      "padding": "1px 28px 1px 10px",
+      "fontSize": "13px",
+      "fontWeight": "400",
+      "borderWidth": "1px",
+      "height": "32px"
+    },
+    "card": {
+      "borderRadius": "8px",
+      "padding": "16px",
+      "borderWidth": "1px",
+      "shadow": "none",
+      "note": "Cards use subtle border, no shadow. Settings sections use card-like containers."
+    },
+    "table-row": {
+      "height": "36px",
+      "padding": "0 12px",
+      "fontSize": "13px",
+      "borderWidth": "0 0 1px 0",
+      "note": "Very compact rows. Issue list uses ~36px rows."
+    },
+    "badge": {
+      "borderRadius": "4px",
+      "padding": "2px 6px",
+      "fontSize": "12px",
+      "fontWeight": "450",
+      "note": "Minimal badges. Status badges like 'Admin' use accent purple color, no background."
+    },
+    "sidebar-item": {
+      "padding": "4px 8px",
+      "fontSize": "13px",
+      "borderRadius": "8px",
+      "fontWeight": "400",
+      "height": "28px",
+      "note": "Compact 28px items. Active state uses subtle bg highlight."
+    },
+    "tab": {
+      "padding": "4px 12px",
+      "fontSize": "13px",
+      "fontWeight": "500",
+      "borderRadius": "6px",
+      "note": "Pill-style tabs with filled background on active. Used for issue filters (All/Active/Backlog)."
+    },
+    "modal": {
+      "borderRadius": "12px",
+      "padding": "16px",
+      "shadow": "0 25px 50px -12px rgba(0,0,0,0.25)",
+      "maxWidth": "640px",
+      "note": "Create issue modal is clean with title input + description area + bottom toolbar."
+    },
+    "command-palette": {
+      "borderRadius": "12px",
+      "padding": "8px",
+      "shadow": "0 25px 50px -12px rgba(0,0,0,0.25)",
+      "maxWidth": "640px",
+      "note": "Cmd+K palette with search input, grouped results, keyboard navigation."
+    },
+    "switch": {
+      "width": "36px",
+      "height": "20px",
+      "borderRadius": "9999px",
+      "note": "Standard toggle switch. Active = accent purple."
+    },
+    "typography": {
+      "display": {"fontSize": "36px", "fontWeight": "300", "letterSpacing": "-0.02em"},
+      "h1": {"fontSize": "24px", "fontWeight": "500", "letterSpacing": "normal"},
+      "h2": {"fontSize": "20px", "fontWeight": "500", "letterSpacing": "normal"},
+      "h3": {"fontSize": "13px", "fontWeight": "500", "letterSpacing": "normal", "note": "Section headers in settings are actually h3 at 13px"},
+      "body": {"fontSize": "13px", "fontWeight": "400", "lineHeight": "1.5"},
+      "small": {"fontSize": "12px", "fontWeight": "400"},
+      "micro": {"fontSize": "11px", "fontWeight": "400"}
+    }
+  }
+}

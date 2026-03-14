@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "source": "app.midday.ai",
+    "extractedAt": "2026-03-13",
+    "version": "2"
+  },
+  "character": {
+    "density": "compact",
+    "corners": "sharp",
+    "elevation": "flat",
+    "borders": "thin",
+    "palette": "monochromatic-warm",
+    "feel": "Minimal financial interface. Almost brutalist — zero border-radius on functional elements, thin 1px borders, no shadows, no elevation. Warm cream backgrounds in light mode, pure black in dark. Display headings use a serif font (Hedvig Letters Serif) while everything else is sans-serif (Hedvig Letters Sans). Numbers are large and light-weight. The design trusts whitespace and typography hierarchy over visual decoration.",
+    "iconography": {
+      "style": "monochromatic, stroke-only, Lucide-style",
+      "weight": "1.5px stroke",
+      "size": "20px default, 16px in compact contexts",
+      "color": "currentColor (inherits text color — foreground or muted-foreground)",
+      "never": "No colored emojis, no filled icons, no multi-color icons. The only colored elements are small solid color squares used as category indicators in tables.",
+      "library": "Lucide React recommended"
+    }
+  },
+  "components": {
+    "button-primary": {
+      "borderRadius": "0px",
+      "padding": "8px 16px",
+      "fontWeight": "500",
+      "fontSize": "14px",
+      "height": "36px",
+      "borderWidth": "0px",
+      "backgroundColor": "rgb(24, 24, 27)",
+      "color": "rgb(250, 250, 250)",
+      "boxShadow": "none",
+      "letterSpacing": "normal"
+    },
+    "button-secondary": {
+      "borderRadius": "0px",
+      "padding": "8px 16px",
+      "fontWeight": "500",
+      "fontSize": "14px",
+      "height": "36px",
+      "borderWidth": "1px",
+      "backgroundColor": "transparent",
+      "boxShadow": "none"
+    },
+    "button-ghost": {
+      "borderRadius": "9999px",
+      "padding": "0px",
+      "fontWeight": "500",
+      "fontSize": "14px",
+      "height": "32px",
+      "borderWidth": "1px",
+      "backgroundColor": "transparent",
+      "note": "Small icon-like buttons (sidebar actions, row actions) use pill shape. Larger CTA buttons use 0px radius."
+    },
+    "button-destructive": {
+      "borderRadius": "0px",
+      "padding": "8px 16px",
+      "fontWeight": "500",
+      "fontSize": "14px",
+      "height": "36px",
+      "borderWidth": "0px",
+      "backgroundColor": "rgb(239, 68, 68)",
+      "color": "rgb(230, 228, 224)",
+      "boxShadow": "none"
+    },
+    "input": {
+      "borderRadius": "0px",
+      "padding": "4px 12px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "36px",
+      "borderWidth": "1px",
+      "borderColor": "rgb(219, 218, 215)",
+      "backgroundColor": "transparent",
+      "boxShadow": "none"
+    },
+    "select": {
+      "borderRadius": "0px",
+      "padding": "8px 12px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "36px",
+      "borderWidth": "1px",
+      "backgroundColor": "transparent"
+    },
+    "card": {
+      "borderRadius": "0px",
+      "padding": "16px 24px",
+      "borderWidth": "1px",
+      "borderColor": "rgb(219, 218, 215)",
+      "boxShadow": "none",
+      "backgroundColor": "transparent",
+      "note": "Dashboard stat cards use thin 1px border, zero radius, no shadow. Content cards on the apps page also zero radius."
+    },
+    "table": {
+      "borderRadius": "0px",
+      "boxShadow": "none"
+    },
+    "table-header": {
+      "height": "48px",
+      "padding": "1px 16px",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "color": "rgb(102, 102, 102)",
+      "borderWidth": "0px 1px 0px 0px"
+    },
+    "table-row": {
+      "height": "49px",
+      "borderWidth": "0px 0px 1px",
+      "fontSize": "14px",
+      "fontWeight": "400"
+    },
+    "table-cell": {
+      "padding": "8px 16px",
+      "fontSize": "14px",
+      "fontWeight": "400"
+    },
+    "badge": {
+      "borderRadius": "9999px",
+      "padding": "0px 12px",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "height": "32px",
+      "borderWidth": "1px",
+      "backgroundColor": "transparent",
+      "note": "Badges are pill-shaped (full round). 'System' badges have outlined style. 'Coming soon' / 'Beta' badges same pill with muted text."
+    },
+    "sidebar-item": {
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "28px",
+      "borderRadius": "0px",
+      "note": "Sidebar is icon-only by default (collapsed). Icons are 20px, items are 28px tall with no text labels visible in default state."
+    },
+    "tab": {
+      "borderRadius": "0px",
+      "padding": "6px 12px",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "height": "34px",
+      "borderWidth": "1px",
+      "note": "Tabs are completely flat, zero radius. Active tab has same background as inactive in some contexts (segment control style)."
+    },
+    "settings-tab": {
+      "borderRadius": "0px",
+      "padding": "0px",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "height": "32px",
+      "note": "Settings horizontal nav uses plain text links, no background, underline on active. Larger font than content tabs."
+    },
+    "modal": {
+      "borderRadius": "0px",
+      "padding": "24px",
+      "borderWidth": "0px 0px 0px 1px",
+      "boxShadow": "none",
+      "note": "Create Transaction uses a slide-in sheet from the right with border-left, NOT a centered dialog. Zero radius, no shadow."
+    },
+    "accordion": {
+      "borderRadius": "0px",
+      "padding": "8px 16px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "36px"
+    },
+    "switch": {
+      "borderRadius": "9999px",
+      "height": "24px",
+      "borderWidth": "2px",
+      "backgroundColor": "rgb(224, 224, 224)"
+    },
+    "avatar": {
+      "borderRadius": "9999px",
+      "height": "32px",
+      "width": "32px",
+      "backgroundColor": "rgb(241, 240, 238)"
+    },
+    "search-input": {
+      "borderRadius": "0px",
+      "padding": "4px 12px",
+      "fontSize": "14px",
+      "height": "36px",
+      "borderWidth": "1px",
+      "note": "Same as regular input — zero radius, thin border."
+    },
+    "dropzone": {
+      "borderRadius": "0px",
+      "padding": "0px 24px",
+      "height": "70px",
+      "borderStyle": "dashed",
+      "note": "File upload area uses dashed border, zero radius."
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "Hedvig Letters Serif",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "lineHeight": "45px",
+        "letterSpacing": "normal",
+        "note": "Display headings (greeting, page titles) use SERIF font, not sans."
+      },
+      "h1": {
+        "fontFamily": "Hedvig Letters Sans",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "lineHeight": "32px"
+      },
+      "h2": {
+        "fontFamily": "Hedvig Letters Sans",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "lineHeight": "28px"
+      },
+      "h3": {
+        "fontFamily": "Hedvig Letters Sans",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "lineHeight": "24px"
+      },
+      "body": {
+        "fontFamily": "Hedvig Letters Sans",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px"
+      },
+      "small": {
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "16px",
+        "color": "rgb(136, 136, 136)"
+      },
+      "label": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "14px"
+      },
+      "helper": {
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "color": "rgb(97, 97, 97)"
+      },
+      "stat-number": {
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "lineHeight": "32px",
+        "note": "Large stat numbers (R$42,500, 12 months) are regular weight, not bold. The size does the work."
+      }
+    }
+  }
+}

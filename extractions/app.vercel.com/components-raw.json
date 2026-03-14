@@ -1,0 +1,104 @@
+{
+  "light": {
+    "button-primary": {
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "height": "32px",
+      "backgroundColor": "rgb(23, 23, 23)",
+      "color": "rgb(255, 255, 255)",
+      "boxShadow": "none"
+    },
+    "button-secondary": {
+      "borderRadius": "6px",
+      "padding": "0px 10px",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "height": "40px",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgb(23, 23, 23)",
+      "boxShadow": "rgb(235, 235, 235) 0px 0px 0px 1px"
+    },
+    "button-ghost": {
+      "borderRadius": "6px",
+      "padding": "1px 8px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "height": "40px",
+      "backgroundColor": "transparent",
+      "color": "rgb(23, 23, 23)"
+    },
+    "input": {
+      "borderRadius": "6px",
+      "padding": "8px 12px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "40px",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)",
+      "boxShadow": "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+    },
+    "select": {
+      "borderRadius": "6px",
+      "padding": "0px 36px 0px 12px",
+      "fontSize": "14px",
+      "height": "40px",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "color": "rgb(23, 23, 23)",
+      "boxShadow": "rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"
+    },
+    "toggle": {
+      "borderRadius": "9999px",
+      "height": "24px",
+      "width": "44px"
+    },
+    "sidebar-item": {
+      "borderRadius": "6px",
+      "padding": "0px 12px",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "height": "36px",
+      "color": "rgb(77, 77, 77)"
+    },
+    "card-section": {
+      "borderRadius": "0",
+      "padding": "24px",
+      "borderBottom": "1px solid rgb(235, 235, 235)"
+    },
+    "command-palette": {
+      "width": "384px",
+      "inputHeight": "48px",
+      "inputFontSize": "14px",
+      "itemHeight": "48px"
+    },
+    "badge": {
+      "borderRadius": "9999px",
+      "fontSize": "12px",
+      "padding": "2px 8px"
+    }
+  },
+  "dark": {
+    "button-primary": {
+      "backgroundColor": "rgb(237, 237, 237)",
+      "color": "rgb(10, 10, 10)"
+    },
+    "button-secondary": {
+      "backgroundColor": "rgb(10, 10, 10)",
+      "color": "rgb(237, 237, 237)",
+      "boxShadow": "rgba(255, 255, 255, 0.14) 0px 0px 0px 1px"
+    },
+    "select": {
+      "backgroundColor": "rgb(10, 10, 10)",
+      "color": "rgb(237, 237, 237)",
+      "boxShadow": "rgba(255, 255, 255, 0.14) 0px 0px 0px 1px"
+    },
+    "input": {
+      "backgroundColor": "rgb(10, 10, 10)",
+      "color": "rgb(255, 255, 255)"
+    }
+  }
+}

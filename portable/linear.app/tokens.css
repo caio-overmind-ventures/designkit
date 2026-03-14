@@ -1,26 +1,94 @@
-/* Design System Tokens — Auto-generated */
-/* Source: undefined */
-/* Generated: 2026-03-12T19:15:33.167Z */
+/* Linear Design System Tokens
+   Extracted: 2026-03-14
+   Source: app.linear.app (authenticated)
+   ========================================= */
 
 :root {
   /* === Colors === */
-  --color-background: #ffffff;
-  --color-foreground: #000000;
+  /* Background */
+  --background: #fafafb;          /* lch(98.94% 0.5 282) */
+  --background-secondary: #ededef;/* lch(94.44% 0.5 282) */
+  --background-tertiary: #ffffff; /* lch(100% 0.5 282) */
+  --background-quaternary: #f5f5f6;/* lch(97.94% 0.5 282) */
+  --sidebar-bg: #f2f2f3;          /* lch(95.94% 0.5 282) */
 
-  /* Neutral scale */
-  --color-neutral-50: #f2f2f2;
-  --color-neutral-100: #e6e6e6;
-  --color-neutral-200: #cccccc;
-  --color-neutral-300: #a6a6a6;
-  --color-neutral-400: #737373;
-  --color-neutral-500: #000000;
-  --color-neutral-600: #000000;
-  --color-neutral-700: #000000;
-  --color-neutral-800: #000000;
-  --color-neutral-900: #000000;
+  /* Text */
+  --foreground: #1a1a1d;          /* lch(9.894% 0 282) */
+  --foreground-secondary: #2e2e32;/* lch(19.788% 1.25 282) */
+  --foreground-tertiary: #5c5c63; /* lch(39.576% 1.25 282) */
+  --foreground-quaternary: #9b9ba2;/* lch(65.3% 1.25 282) */
+
+  /* Borders */
+  --border-primary: #eeeeee;      /* lch(94.89% 0 282) */
+  --border-secondary: #dcdcdc;    /* lch(89.49% 0 282) */
+  --border-tertiary: #d0d0d0;     /* lch(85.44% 0 282) */
+
+  /* Accent */
+  --accent: #5e6ad2;              /* lch(53% 52.26 286.91) - purple */
+  --accent-foreground: #ffffff;
+
+  /* Focus */
+  --focus-ring: #5e6ad2;
 
   /* === Typography === */
-  --font-sans: 'system-ui', system-ui, sans-serif;
+  --font-sans: "Inter Variable", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "Berkeley Mono", "SFMono Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
 
-  /* === Border Radius === */
+  /* Font Sizes */
+  --text-micro: 0.6875rem;   /* 11px */
+  --text-mini: 0.75rem;      /* 12px */
+  --text-small: 0.8125rem;   /* 13px */
+  --text-regular: 0.9375rem; /* 15px */
+  --text-large: 1.125rem;    /* 18px */
+  --text-title3: 1.25rem;    /* 20px */
+  --text-title2: 1.5rem;     /* 24px */
+  --text-title1: 2.25rem;    /* 36px */
+
+  /* Font Weights */
+  --weight-light: 300;
+  --weight-normal: 450;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* === Spacing & Layout === */
+  --sidebar-width: 244px;
+  --control-height: 32px;
+  --control-radius: 8px;
+  --radius-pill: 9999px;
+
+  /* === Motion === */
+  --speed-quick: 0.1s;
+  --speed-regular: 0.25s;
+  --speed-slow: 0.35s;
+  --ease-out-quad: cubic-bezier(.25, .46, .45, .94);
+  --ease-out-expo: cubic-bezier(.19, 1, .22, 1);
+}
+
+.dark {
+  /* Background */
+  --background: #0d0d0f;          /* lch(4.52% 0.75 272) */
+  --background-secondary: #161619;/* lch(9.02% 2.55 272) */
+  --background-tertiary: #1d1d21; /* lch(11.27% 3.45 272) */
+  --background-quaternary: #111113;/* lch(6.77% 0.75 272) */
+  --sidebar-bg: #050505;          /* lch(1.82% 0 272) */
+
+  /* Text */
+  --foreground: #ffffff;          /* lch(100% 0 272) */
+  --foreground-secondary: #e5e5e6;/* lch(90.35% 1.375 272) */
+  --foreground-tertiary: #9494a0; /* lch(61.399% 1.375 272) */
+  --foreground-quaternary: #575763;/* lch(36.308% 1.375 272) */
+
+  /* Borders */
+  --border-primary: #141416;      /* lch(8.84% 2.91 272) */
+  --border-secondary: #26262b;    /* lch(15.32% 2.91 272) */
+  --border-tertiary: #26262b;
+
+  /* Accent */
+  --accent: #5e6ad2;              /* stays the same across modes */
+  --accent-foreground: #ffffff;
+
+  /* Focus */
+  --focus-ring: #5e6ad2;
 }

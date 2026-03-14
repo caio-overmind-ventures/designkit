@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "source": "app.vercel.com",
+    "extractedAt": "2026-03-14",
+    "modes": ["light", "dark"]
+  },
+  "character": {
+    "density": "compact",
+    "corners": "slightly-rounded",
+    "elevation": "flat",
+    "borders": "thin",
+    "palette": "monochromatic",
+    "feel": "Brutally minimal black-and-white interface with extreme information density, where color is reserved exclusively for status and interactive states.",
+    "iconography": {
+      "style": "monochromatic, stroke-only",
+      "weight": "1.5px stroke",
+      "size": "16px default, 20px nav",
+      "color": "currentColor",
+      "library": "custom SVGs (Geist Icons)",
+      "never": "no emojis, no filled icons, no multi-color icons"
+    }
+  },
+  "components": {
+    "button": {
+      "borderRadius": "6px",
+      "padding": "0px 6px",
+      "fontWeight": "500",
+      "fontSize": "14px",
+      "letterSpacing": "normal",
+      "height": "32px",
+      "borderWidth": "0",
+      "shadow": "none",
+      "notes": "Primary: bg-foreground text-background. Compact height for inline actions."
+    },
+    "button-secondary": {
+      "borderRadius": "6px",
+      "padding": "0px 10px",
+      "fontWeight": "500",
+      "fontSize": "14px",
+      "height": "40px",
+      "borderWidth": "0",
+      "shadow": "inset 0 0 0 1px var(--border)",
+      "notes": "Outline style via box-shadow ring, not border. Taller than primary."
+    },
+    "button-ghost": {
+      "borderRadius": "6px",
+      "padding": "1px 8px",
+      "fontWeight": "400",
+      "fontSize": "14px",
+      "height": "40px",
+      "borderWidth": "0",
+      "shadow": "none"
+    },
+    "input": {
+      "borderRadius": "6px",
+      "padding": "8px 12px",
+      "fontSize": "14px",
+      "borderWidth": "0",
+      "height": "40px",
+      "shadow": "inset 0 0 0 1px rgba(0,0,0,0.08)",
+      "notes": "Border via box-shadow ring, not CSS border. Placeholder color: gray-600."
+    },
+    "select": {
+      "borderRadius": "6px",
+      "padding": "0px 36px 0px 12px",
+      "fontSize": "14px",
+      "height": "40px",
+      "shadow": "inset 0 0 0 1px rgba(0,0,0,0.08)"
+    },
+    "card": {
+      "borderRadius": "0px",
+      "padding": "24px",
+      "borderWidth": "0 0 1px 0",
+      "shadow": "none",
+      "notes": "Cards are flat sections separated by bottom borders, not elevated containers."
+    },
+    "badge": {
+      "borderRadius": "9999px",
+      "padding": "2px 8px",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "notes": "Pill-shaped badges. Used for roles (Owner), status (2FA)."
+    },
+    "sidebar-item": {
+      "padding": "0px 12px",
+      "fontSize": "14px",
+      "borderRadius": "6px",
+      "fontWeight": "400",
+      "height": "36px",
+      "notes": "Active state: fontWeight 500, text color foreground. Inactive: gray-600."
+    },
+    "tab": {
+      "padding": "8px 0",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "borderRadius": "0",
+      "notes": "Underline-style tabs. Active: border-bottom 2px, fontWeight 500."
+    },
+    "modal": {
+      "borderRadius": "12px",
+      "padding": "24px",
+      "shadow": "0 0 0 1px rgba(0,0,0,0.08), 0px 8px 16px -4px rgba(0,0,0,0.04), 0px 24px 32px -8px rgba(0,0,0,0.06)",
+      "maxWidth": "480px"
+    },
+    "command-palette": {
+      "width": "384px",
+      "borderRadius": "12px",
+      "inputHeight": "48px",
+      "itemHeight": "48px",
+      "shadow": "0 0 0 1px rgba(0,0,0,0.08), 0px 16px 24px -8px rgba(0,0,0,0.06)"
+    },
+    "toggle": {
+      "borderRadius": "9999px",
+      "height": "24px",
+      "width": "44px"
+    },
+    "table-row": {
+      "height": "48px",
+      "padding": "0 16px",
+      "fontSize": "14px",
+      "borderWidth": "0 0 1px 0"
+    },
+    "typography": {
+      "display": { "fontSize": "36px", "fontWeight": "700", "letterSpacing": "-0.02em" },
+      "h1": { "fontSize": "24px", "fontWeight": "600", "letterSpacing": "-0.015em" },
+      "h2": { "fontSize": "20px", "fontWeight": "600", "letterSpacing": "-0.01em" },
+      "h3": { "fontSize": "16px", "fontWeight": "600" },
+      "body": { "fontSize": "14px", "fontWeight": "400", "lineHeight": "20px" },
+      "small": { "fontSize": "13px", "fontWeight": "400", "lineHeight": "20px" },
+      "label": { "fontSize": "14px", "fontWeight": "400", "lineHeight": "24px" },
+      "caption": { "fontSize": "12px", "fontWeight": "400", "color": "gray-600" }
+    }
+  }
+}
