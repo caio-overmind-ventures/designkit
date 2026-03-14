@@ -1,0 +1,308 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 9999px;
+}
+
+/* ============================================
+   CAL.COM DESIGN TOKENS — Light Mode
+   ============================================ */
+:root {
+  --radius: 10px;
+
+  /* Core */
+  --background: #eeeff2;
+  --foreground: #3c3e44;
+  --card: #ffffff;
+  --card-foreground: #3c3e44;
+  --popover: #ffffff;
+  --popover-foreground: #3c3e44;
+
+  /* Brand / Primary */
+  --primary: #292929;
+  --primary-foreground: #ffffff;
+
+  /* Secondary */
+  --secondary: #eeeff2;
+  --secondary-foreground: #3c3e44;
+
+  /* Muted */
+  --muted: #f6f7f9;
+  --muted-foreground: #6b7280;
+
+  /* Accent */
+  --accent: #e5e7eb;
+  --accent-foreground: #070a0d;
+
+  /* Destructive */
+  --destructive: #811d1d;
+  --destructive-foreground: #ffffff;
+
+  /* Borders */
+  --border: #e5e7eb;
+  --input: #d1d5db;
+  --ring: #292929;
+
+  /* Semantic */
+  --success: #e4fbed;
+  --success-foreground: #285239;
+  --warning: #ffedd6;
+  --warning-foreground: #74331b;
+  --info: #dde7fd;
+  --info-foreground: #243c84;
+
+  /* Charts */
+  --chart-1: #ea580c;
+  --chart-2: #0d9488;
+  --chart-3: #155e75;
+  --chart-4: #f59e0b;
+  --chart-5: #f97316;
+
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #3c3e44;
+  --sidebar-primary: #292929;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e5e7eb;
+  --sidebar-accent-foreground: #070a0d;
+  --sidebar-border: #eeeff2;
+  --sidebar-ring: #292929;
+
+  /* Cal-specific */
+  --cal-bg: #ffffff;
+  --cal-bg-subtle: #eeeff2;
+  --cal-bg-emphasis: #e5e7eb;
+  --cal-text-emphasis: #070a0d;
+  --cal-text-subtle: #6b7280;
+  --cal-text-muted: #9ca3b0;
+}
+
+/* ============================================
+   CAL.COM DESIGN TOKENS — Dark Mode
+   ============================================ */
+.dark {
+  --background: #0f0f0f;
+  --foreground: #d4d4d4;
+  --card: #171717;
+  --card-foreground: #d4d4d4;
+  --popover: #171717;
+  --popover-foreground: #d4d4d4;
+
+  --primary: #fafafa;
+  --primary-foreground: #000000;
+
+  --secondary: #262626;
+  --secondary-foreground: #d4d4d4;
+
+  --muted: #171717;
+  --muted-foreground: #a3a3a3;
+
+  --accent: #404040;
+  --accent-foreground: #fafafa;
+
+  --destructive: #f87272;
+  --destructive-foreground: #0f0f0f;
+
+  --border: #262626;
+  --input: #4d4d4d;
+  --ring: #fafafa;
+
+  --success: #285231;
+  --success-foreground: #e4fbe9;
+  --warning: #74331b;
+  --warning-foreground: #fcefd9;
+  --info: #253883;
+  --info-foreground: #dee9fc;
+
+  --chart-1: #1d4ed8;
+  --chart-2: #10b981;
+  --chart-3: #f59e0b;
+  --chart-4: #7c3aed;
+  --chart-5: #f43f5e;
+
+  --sidebar: #171717;
+  --sidebar-foreground: #d4d4d4;
+  --sidebar-primary: #fafafa;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #262626;
+  --sidebar-accent-foreground: #fafafa;
+  --sidebar-border: #171717;
+  --sidebar-ring: #fafafa;
+
+  --cal-bg: #0f0f0f;
+  --cal-bg-subtle: #262626;
+  --cal-bg-emphasis: #404040;
+  --cal-text-emphasis: #fafafa;
+  --cal-text-subtle: #a3a3a3;
+  --cal-text-muted: #a3a3a3;
+}
+
+/* ============================================
+   COMPONENT OVERRIDES — extracted from app UI
+   ============================================ */
+
+/* Buttons */
+[data-slot="button"] {
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  gap: 4px;
+}
+
+/* Primary button signature shadow */
+[data-slot="button"][data-variant="default"],
+[data-slot="button"]:not([data-variant]) {
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.06),
+              0px 1px 1px 0px rgba(0,0,0,0.08),
+              1px 4px 8px 0px rgba(0,0,0,0.12),
+              0px 2px 0.4px 0px rgba(255,255,255,0.12) inset,
+              0px -3px 2px 0px rgba(0,0,0,0.04) inset;
+}
+
+/* Outline/secondary buttons */
+[data-slot="button"][data-variant="outline"],
+[data-slot="button"][data-variant="secondary"] {
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.03),
+              0px 2px 2px -1px rgba(0,0,0,0.03);
+}
+
+/* Ghost buttons */
+[data-slot="button"][data-variant="ghost"] {
+  box-shadow: none;
+}
+
+/* Inputs */
+[data-slot="input"],
+[data-slot="textarea"],
+[data-slot="select-trigger"] {
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.03),
+              0px 2px 2px -1px rgba(0,0,0,0.03);
+}
+
+/* Cards */
+[data-slot="card"] {
+  border-radius: 12px;
+  box-shadow: none;
+  border-width: 1px;
+}
+
+/* Badges */
+[data-slot="badge"] {
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Table */
+[data-slot="table-cell"] {
+  font-size: 14px;
+}
+
+/* Dialog */
+[data-slot="dialog-content"] {
+  border-radius: 16px;
+  padding: 32px;
+}
+
+/* Dialog overlay */
+[data-slot="dialog-overlay"] {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Tabs */
+[data-slot="tabs-trigger"] {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Separator */
+[data-slot="separator"] {
+  opacity: 0.5;
+}
+
+/* Switch */
+[data-slot="switch"] {
+  border-radius: 9999px;
+}
+
+/* Label */
+[data-slot="label"] {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Dropdown menu */
+[data-slot="dropdown-menu-content"] {
+  border-radius: 10px;
+}
+
+/* Command */
+[data-slot="command"] {
+  border-radius: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Inter Fallback', ui-sans-serif, system-ui, sans-serif;
+  }
+  html {
+    @apply font-sans;
+  }
+}

@@ -1,0 +1,253 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Midday Design System v2 — extracted from app.midday.ai
+ * Fonts: Hedvig Letters Sans (body) + Hedvig Letters Serif (display)
+ * Style: Brutalist-minimal, financial-grade
+ * Corners: SHARP (0px radius on all functional elements)
+ * Only pills: badges, switches, avatars, ghost icon buttons
+ * Elevation: FLAT (zero shadows everywhere)
+ * Borders: THIN (1px, warm grey)
+ */
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 7%;
+  --card: 45 18% 96%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 45 18% 96%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 240 5.9% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 40 11% 89%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 40 11% 89%;
+  --muted-foreground: 0 0% 38%;
+  --accent: 40 10% 94%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 45 5% 85%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+  --radius: 0rem;
+  --sidebar: 0 0% 100%;
+  --sidebar-foreground: 0 0% 7%;
+  --sidebar-primary: 240 5.9% 10%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 40 10% 94%;
+  --sidebar-accent-foreground: 240 5.9% 10%;
+  --sidebar-border: 45 5% 85%;
+  --sidebar-ring: 240 5.9% 10%;
+  --chart-1: 0 0% 7%;
+  --chart-2: 0 0% 40%;
+  --chart-3: 40 11% 89%;
+  --chart-4: 45 18% 96%;
+  --chart-5: 0 0% 56%;
+  --success: 142 71% 45%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 0 0% 7%;
+  --info: 217 91% 60%;
+  --info-foreground: 0 0% 100%;
+}
+
+.dark {
+  --background: 0 0% 5%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 7%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 240 5.9% 10%;
+  --secondary: 0 0% 7%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 11%;
+  --muted-foreground: 0 0% 38%;
+  --accent: 0 0% 11%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 359 100% 61%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 11%;
+  --input: 0 0% 11%;
+  --ring: 240 4.9% 83.9%;
+  --sidebar: 0 0% 5%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 0 0% 98%;
+  --sidebar-primary-foreground: 240 5.9% 10%;
+  --sidebar-accent: 0 0% 11%;
+  --sidebar-accent-foreground: 0 0% 98%;
+  --sidebar-border: 0 0% 11%;
+  --sidebar-ring: 240 4.9% 83.9%;
+  --chart-1: 0 0% 98%;
+  --chart-2: 0 0% 60%;
+  --chart-3: 0 0% 11%;
+  --chart-4: 0 0% 7%;
+  --chart-5: 0 0% 44%;
+  --success: 142 71% 45%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 0 0% 7%;
+  --info: 217 91% 60%;
+  --info-foreground: 0 0% 100%;
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-sidebar: hsl(var(--sidebar));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+  --color-success: hsl(var(--success));
+  --color-success-foreground: hsl(var(--success-foreground));
+  --color-warning: hsl(var(--warning));
+  --color-warning-foreground: hsl(var(--warning-foreground));
+  --color-info: hsl(var(--info));
+  --color-info-foreground: hsl(var(--info-foreground));
+  --radius-sm: calc(var(--radius));
+  --radius-md: calc(var(--radius));
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius));
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+/* ============================================
+   COMPONENT OVERRIDES — extracted from app UI
+   Midday uses 0px radius on ALL functional
+   elements. Only pills: badge, switch, avatar.
+   ============================================ */
+
+/* Buttons — all 0px radius, height 36px */
+[data-slot="button"] {
+  border-radius: 0px !important;
+  font-weight: 500;
+  font-size: 14px;
+  height: 36px;
+  letter-spacing: normal;
+  box-shadow: none;
+}
+
+/* Inputs — 0px radius, height 36px, thin border */
+[data-slot="input"],
+[data-slot="textarea"] {
+  border-radius: 0px !important;
+  font-size: 14px;
+  height: 36px;
+  padding: 4px 12px;
+  box-shadow: none;
+}
+
+[data-slot="textarea"] {
+  height: auto;
+  padding: 8px 12px;
+}
+
+/* Select triggers */
+[data-slot="select-trigger"] {
+  border-radius: 0px !important;
+  font-size: 14px;
+  height: 36px;
+  box-shadow: none;
+}
+
+/* Cards — 0px radius, no shadow */
+[data-slot="card"] {
+  border-radius: 0px !important;
+  box-shadow: none;
+}
+
+/* Badges — PILL shape (only round element) */
+[data-slot="badge"] {
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0px 12px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Tabs — 0px radius */
+[data-slot="tabs-trigger"] {
+  border-radius: 0px !important;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  height: 34px;
+}
+
+/* Dialog — 0px radius */
+[data-slot="dialog-content"],
+[data-slot="dialog-overlay"] {
+  border-radius: 0px !important;
+}
+
+/* Table */
+[data-slot="table-header"] th {
+  font-weight: 500;
+  color: hsl(var(--muted-foreground));
+  height: 48px;
+  padding: 1px 16px;
+}
+
+[data-slot="table-cell"] {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+/* Accordion */
+[data-slot="accordion-trigger"] {
+  border-radius: 0px !important;
+}
+
+/* Alert */
+[data-slot="alert"] {
+  border-radius: 0px !important;
+}
+
+/* Separator — use border color */
+[data-slot="separator"] {
+  background-color: hsl(var(--border));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
