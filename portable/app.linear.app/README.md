@@ -1,7 +1,7 @@
-# app.vercel.com — Design Tokens
+# app.linear.app — Design Tokens
 
 > Auto-extracted from undefined
-> Generated: 2026-03-16T11:56:31.157Z
+> Generated: 2026-03-16T11:56:31.090Z
 
 ## Files
 

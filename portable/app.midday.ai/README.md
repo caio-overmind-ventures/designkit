@@ -1,7 +1,7 @@
-# app.vercel.com — Design Tokens
+# app.midday.ai — Design Tokens
 
 > Auto-extracted from undefined
-> Generated: 2026-03-16T11:56:31.157Z
+> Generated: 2026-03-16T11:56:31.123Z
 
 ## Files
 
