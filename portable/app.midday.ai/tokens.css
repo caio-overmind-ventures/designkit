@@ -1,26 +1,38 @@
 /* Design System Tokens — Auto-generated */
-/* Source: undefined */
-/* Generated: 2026-03-16T11:56:31.123Z */
+/* Format: designkit-v2 | Generated: 2026-03-16T12:04:08.629Z */
 
 :root {
   /* === Colors === */
+  --color-primary: #121212;
   --color-background: #ffffff;
-  --color-foreground: #000000;
+  --color-foreground: #121212;
 
-  /* Neutral scale */
-  --color-neutral-50: #f2f2f2;
-  --color-neutral-100: #e6e6e6;
-  --color-neutral-200: #cccccc;
-  --color-neutral-300: #a6a6a6;
-  --color-neutral-400: #737373;
-  --color-neutral-500: #000000;
-  --color-neutral-600: #000000;
-  --color-neutral-700: #000000;
-  --color-neutral-800: #000000;
-  --color-neutral-900: #000000;
+  /* Primary scale */
+  --color-primary-50: #f3f3f3;
+  --color-primary-100: #e7e7e7;
+  --color-primary-200: #d0d0d0;
+  --color-primary-300: #acacac;
+  --color-primary-400: #7d7d7d;
+  --color-primary-500: #121212;
+  --color-primary-600: #0f0f0f;
+  --color-primary-700: #0d0d0d;
+  --color-primary-800: #0a0a0a;
+  --color-primary-900: #070707;
 
   /* === Typography === */
-  --font-sans: 'system-ui', system-ui, sans-serif;
+  --font-sans: 'Hedvig Letters Sans', system-ui, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 24px;
 
   /* === Border Radius === */
+  --radius: 6px;
+  --radius-sm: calc(6px * 0.5);
+  --radius-lg: calc(6px * 1.5);
+  --radius-xl: calc(6px * 2);
+  --radius-full: 9999px;
+}
+
+.dark {
+  --color-background: #0d0d0d;
+  --color-foreground: #fafafa;
 }

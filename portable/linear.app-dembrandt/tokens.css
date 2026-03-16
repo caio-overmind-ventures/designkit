@@ -1,0 +1,19 @@
+/* Design System Tokens — Auto-generated */
+/* Format: legacy | Generated: 2026-03-16T12:04:08.634Z */
+
+:root {
+  /* === Colors === */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+
+  /* === Typography === */
+  --font-sans: 'system-ui', system-ui, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+
+  /* === Border Radius === */
+
+  /* === Shadows === */
+  --shadow-1: lch(0 0 0 / 0.04) 0px 4px 4px -1px, lch(0 0 0 / 0.08) 0px 1px 1px 0px;
+  --shadow-2: lch(12.62 2.16 272) 0px 0px 0px 1px, lch(0 0 0 / 0.04) 0px 4px 4px -1px, lch(0 0 0 / 0.08) 0px 1px 1px 0px;
+}

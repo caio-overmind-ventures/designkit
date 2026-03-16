@@ -1,26 +1,62 @@
 /* Design System Tokens — Auto-generated */
-/* Source: undefined */
-/* Generated: 2026-03-16T11:56:31.157Z */
+/* Format: designkit-v2 | Generated: 2026-03-16T12:04:08.632Z */
 
 :root {
   /* === Colors === */
+  --color-primary: #0072f5;
   --color-background: #ffffff;
-  --color-foreground: #000000;
+  --color-foreground: #171717;
+  --color-accent: #0072f5;
+  --color-link: #0072f5;
+  --color-error: #ee0000;
+  --color-warning: #f5a623;
+  --color-success: #0070f3;
 
-  /* Neutral scale */
-  --color-neutral-50: #f2f2f2;
-  --color-neutral-100: #e6e6e6;
-  --color-neutral-200: #cccccc;
-  --color-neutral-300: #a6a6a6;
-  --color-neutral-400: #737373;
-  --color-neutral-500: #000000;
-  --color-neutral-600: #000000;
-  --color-neutral-700: #000000;
-  --color-neutral-800: #000000;
-  --color-neutral-900: #000000;
+  /* Primary scale */
+  --color-primary-50: #f2f8ff;
+  --color-primary-100: #e6f1fe;
+  --color-primary-200: #cce3fd;
+  --color-primary-300: #a6cefc;
+  --color-primary-400: #73b1fa;
+  --color-primary-500: #0072f5;
+  --color-primary-600: #0061d0;
+  --color-primary-700: #0050ac;
+  --color-primary-800: #003f87;
+  --color-primary-900: #002e62;
+
+  /* Gray scale */
+  --color-gray-100: #f2f2f2;
+  --color-gray-200: #ebebeb;
+  --color-gray-300: #e6e6e6;
+  --color-gray-400: #ebebeb;
+  --color-gray-500: #c9c9c9;
+  --color-gray-600: #a8a8a8;
+  --color-gray-700: #8f8f8f;
+  --color-gray-800: #7d7d7d;
+  --color-gray-900: #4d4d4d;
+  --color-gray-1000: #171717;
 
   /* === Typography === */
-  --font-sans: 'system-ui', system-ui, sans-serif;
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+  --font-size-base: 16px;
+  --line-height-base: normal;
 
   /* === Border Radius === */
+  --radius: 6px;
+  --radius-sm: calc(6px * 0.5);
+  --radius-lg: calc(6px * 1.5);
+  --radius-xl: calc(6px * 2);
+  --radius-full: 9999px;
+
+  /* === Layout === */
+  --sidebar-width: 256px;
+  --header-height: 64px;
+  --page-width: 1400px;
+  --form-height: 40px;
+}
+
+.dark {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
 }
